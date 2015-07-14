@@ -1,0 +1,3 @@
+[submodule "accelerate-git/accelerate"]
+	path = accelerate-git/accelerate
+	url = https://github.com/AccelerateHS/accelerate.git
