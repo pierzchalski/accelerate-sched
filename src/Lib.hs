@@ -1,9 +1,11 @@
 module Lib
-    ( someFunc
+    ( Lib.run
     ) where
 
 import Prelude as P
 import Data.Array.Accelerate as A
+import Data.Array.Accelerate.Interpreter as A
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+run :: Arrays a => Acc a -> a
+run acc = A.run acc
+
